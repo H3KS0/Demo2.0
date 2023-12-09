@@ -62,20 +62,10 @@ namespace ДЕМОЭКЗАМЕН3
                  {
                     current_id = sqlReader.GetInt32(0);
                     current_role = sqlReader.GetInt32(3);
-                    //Проверка роли
-                    if (current_role == 2)
-                    {   
+
                         this.Hide();
                         Menu form = new Menu(current_role, current_id);
                         form.Show();
-                    }
-                    else
-                    {
-                        this.Hide();
-                        Menu form = new Menu(current_role, current_id);
-                        form.Show();
-                    }
-                    
 
                   }
 
